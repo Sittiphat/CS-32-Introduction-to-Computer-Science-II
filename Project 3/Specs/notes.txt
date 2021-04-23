@@ -1,0 +1,32 @@
+                                 / p("ab", "c") - "abc"
+                 /- p("a", "bc") x
+                /                 \ p("ac", "b") - "acb"
+               /
+              /                   / p("ba", "c") - "bac"
+p("", "abc") x ---- p("b", "ac") x
+              \                   \ p("bc", "a") - "bca"
+               \
+                \                 / p("ca", "b") - "cab"
+                 \- p("c", "ab") x
+                                  \ p("cb", "a") - "cba"
+
+                 ^-- 1st for loop  ^- 2nd for      ^- 3rd one prints
+
+
+
+
+
+
+distinctPermutation(arr, size) {
+  if (size = 0) {
+  return;
+  }
+
+  if (arr[0] != arr[1]) {
+    temp[0] = arr[0];
+
+  dP(arr + 1, size - 1);
+  
+
+
+"C:/Users/Jesse Narkmanee/Coding/Coding Projects/COM-SCI-32.-Introduction-to-Computer-Science-II/Project 3/words.txt"
